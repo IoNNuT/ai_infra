@@ -1,0 +1,19 @@
+[project]
+name = "email-cleanup"
+version = "0.1.0"
+description = "MCP server for Gmail + iCloud inbox cleanup"
+readme = "README.md"
+authors = [
+    { name = "Ionut Bucheru", email = "ionut.bucheru@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.27.1",
+]
+
+[project.scripts]
+email-cleanup-server = "email_cleanup.server:main"
+
+[build-system]
+requires = ["uv_build>=0.11.16,<0.12.0"]
+build-backend = "uv_build"
