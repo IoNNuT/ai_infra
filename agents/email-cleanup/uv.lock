@@ -178,11 +178,15 @@ name = "email-cleanup"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "imap-tools" },
     { name = "mcp" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "mcp", specifier = ">=1.27.1" }]
+requires-dist = [
+    { name = "imap-tools", specifier = ">=1.10.0" },
+    { name = "mcp", specifier = ">=1.27.1" },
+]
 
 [[package]]
 name = "h11"
@@ -237,6 +241,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/b9/28/99c51f664567218d824af024c0251650fb27e4ca066df188dab0769c5b91/idna-3.17.tar.gz", hash = "sha256:5eb0cb53bc467c12eadcf6de83163ad8527cec9416f44b9b61b19caedad2b87f", size = 196048, upload-time = "2026-05-28T14:32:38.55Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/de/a7/f76514cc40ad6234098ecdebda08732d75964776c51a42845b7da10649e2/idna-3.17-py3-none-any.whl", hash = "sha256:466e48829084efe2548012b855df21540b96f2e20e51bd124c851536556a592c", size = 65316, upload-time = "2026-05-28T14:32:37.035Z" },
+]
+
+[[package]]
+name = "imap-tools"
+version = "1.13.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f7/cb/76d8697739439be6dd0261db5a27c945fb6a43e054f2d2e90283be502058/imap_tools-1.13.0.tar.gz", hash = "sha256:0da0d72c921a724cba09b959bad9bfaf60bca537a697e69a076fdf607ef5775c", size = 47683, upload-time = "2026-05-12T07:14:54.488Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/19/a8/0f58c13d2660d5fc8f808ce8b46828d2941752ec21e4015bde99c08b37d7/imap_tools-1.13.0-py3-none-any.whl", hash = "sha256:656c37beba22ab2929b73c07d0ca397ae8805b670d390b1127723e3335244e6d", size = 35849, upload-time = "2026-05-12T07:14:52.669Z" },
 ]
 
 [[package]]
